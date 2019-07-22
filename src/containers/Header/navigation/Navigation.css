@@ -21,11 +21,6 @@
     margin-right: 50px;
 }
 
-.main-menu__item:hover > .sub-menu {
-    margin-top: -2px;
-    opacity: 1;
-}
-
 .main-menu__link {
     text-decoration: none;
     color: #fff;
@@ -54,3 +49,4 @@
     padding-left: 2px;
     padding-right: 2px;
 }
+

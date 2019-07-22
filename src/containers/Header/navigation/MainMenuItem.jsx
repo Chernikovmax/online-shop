@@ -19,7 +19,9 @@ export class MainMenuItem extends Component {
         const { route: { routeName, routeLink }, linksToSections } = this.props;
         const { isMenuItemHovered } = this.state;
         return (
-            <div className="main-menu__item">
+            <div className="main-menu__item"
+                onMouseLeave={this.toggleSubMenu}
+            >
                 <NavLink 
                     className="main-menu__link"
                     to={routeLink} 

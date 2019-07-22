@@ -1,13 +1,13 @@
 .sub-menu {
     display: block;
     position: absolute;
-    margin-top: 36px;
     padding-top: 18px;
-    background-color: transparent;
+    margin-top: -2px;
+    background-color: green;
     width: auto;
     height: auto;
-    transition: all 0.4s ease;
-    opacity: 0;
+    animation-name: showSubMenu;
+    animation-duration: .5s;
 }
 
 .sub-menu__wrapper {
@@ -28,4 +28,17 @@
 
 .sub-menu__link:hover {
     color: #f51167;
+}
+
+
+@keyframes showSubMenu {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }   
 }
