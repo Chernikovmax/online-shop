@@ -1,0 +1,112 @@
+.header-container {
+    display: flex;
+    flex-direction: column;
+    height: 126px;
+    width: 100vw;
+    max-width: 100%;
+}
+
+.header-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 76px;
+}
+
+.logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 162px;
+    height: 100%;
+}
+
+.header-top__input-wrapper {
+    height: 44px;
+    display: flex;
+    align-items: center;
+}
+
+.header-top__search {
+    height: 100%;
+    width: 480px;
+    margin-left: 40px;
+    padding-left: 20px;
+    border-radius: 20px 0 0 20px;
+    background-color: #f0f0f0;
+    border: none;
+}
+
+.header-top__search-icon {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 58px;
+    margin-right: 40px;
+    padding-right: 20px;
+    border-radius: 0 20px 20px 0;
+    height: 100%;
+    background-color: #f0f0f0;
+}
+
+.profile {
+    width: 190px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.profile > svg {
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.profile > span {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.profile__link {
+    text-decoration: none;
+    color: #1f203a;
+}
+
+.shopping-cart {
+    width: 150px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 14px;
+    position: relative;
+}
+.shopping-cart__link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: #000;
+    margin-left: 30px;
+}
+
+.shopping-cart__link > svg {
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.shopping-cart__counter {
+    position: absolute;
+    top: -7px;
+    left: 47px;
+    width: 16px;
+    height: 17px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    background-color: #f51167;
+    text-align: center;
+    color: #fff;
+}

@@ -1,0 +1,46 @@
+.sub-menu {
+    display: block;
+    position: absolute;
+    top: 50px;
+    padding-top: 0;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    animation-name: showSubMenu;
+    animation-duration: .5s;
+}
+
+.sub-menu__wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.sub-menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #000;
+    width: auto;
+    white-space: nowrap;
+}
+
+.sub-menu__link:hover {
+    color: #f51167;
+}
+
+
+@keyframes showSubMenu {
+    from {
+        padding-top: 25px;
+        opacity: 0;
+    }
+
+    to {
+        padding-top: 0;
+        opacity: 1;
+    }   
+}
