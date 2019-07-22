@@ -11,8 +11,12 @@ export class MainMenuItem extends Component {
         };
     }
 
-    toggleSubMenu = () => {
-        this.setState({isMenuItemHovered: !this.state.isMenuItemHovered})
+    showSubMenu = () => {
+        this.setState({isMenuItemHovered: true})
+    };
+
+    hideSubMenu = () => {
+        this.setState({isMenuItemHovered: false})
     };
 
     render(props) {
@@ -20,12 +24,12 @@ export class MainMenuItem extends Component {
         const { isMenuItemHovered } = this.state;
         return (
             <div className="main-menu__item"
-                onMouseLeave={this.toggleSubMenu}
+                onMouseLeave={this.hideSubMenu}
             >
                 <NavLink 
                     className="main-menu__link"
                     to={routeLink} 
-                    onMouseOver={this.toggleSubMenu}
+                    onMouseOver={this.showSubMenu}
                 >
                     {routeName}
                 </NavLink>

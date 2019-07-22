@@ -1,9 +1,9 @@
 .sub-menu {
     display: block;
     position: absolute;
-    padding-top: 18px;
-    margin-top: -2px;
-    background-color: green;
+    top: 50px;
+    padding-top: 0;
+    background-color: transparent;
     width: auto;
     height: auto;
     animation-name: showSubMenu;
@@ -11,7 +11,7 @@
 }
 
 .sub-menu__wrapper {
-    background-color: tomato;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -19,9 +19,11 @@
 }
 
 .sub-menu__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     color: #000;
-    margin-top: 10px;
     width: auto;
     white-space: nowrap;
 }
@@ -33,12 +35,12 @@
 
 @keyframes showSubMenu {
     from {
-        transform: translateY(50px);
+        padding-top: 25px;
         opacity: 0;
     }
 
     to {
-        transform: translateY(0);
+        padding-top: 0;
         opacity: 1;
     }   
 }
