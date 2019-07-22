@@ -1,0 +1,61 @@
+.top-slider {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 100%;
+    height: calc(100vw / 1.3);
+}
+
+.slide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide__background {
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    bottom: -10%;
+    left: -10%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.slide__content {
+
+}
+
+.slide__product-title {
+
+}
+
+.slide__product-name {
+
+}
+
+.slide__product-description {
+
+}
+
+.slide__buttons {
+
+}
+
+.slide__btn {
+
+}
+
+.slide__btn-buy {
+
+}
+
+.slide__price-block {
+
+}
+
+.slide__price {
+
+}
