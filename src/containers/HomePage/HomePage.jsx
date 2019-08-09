@@ -22,6 +22,18 @@ const topProducts = [
 
 export class HomePage extends Component {
   render() {
-    return <TopSlider products={topProducts} />;
+    return (
+      <div>
+        <TopSlider products={topProducts} />
+        <div
+          style={{
+            width: "100vw",
+            maxWidth: "100%",
+            height: "200px",
+            backgroundColor: "#000"
+          }}
+        />
+      </div>
+    );
   }
 }

@@ -4,19 +4,43 @@ import cx from "classnames";
 import "./TopSlider.css";
 
 export class TopSlider extends Component {
-  state = {
-    slidesCount: this.props.products.length,
-    activeSlide: 0
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      slidesCount: this.props.products.length,
+      activeSlide: 0
+    };
+    this.autoplayIterval = setInterval(this.nextSlide, 4000);
+  }
 
-  showSlides = () => {
+  nextSlide = () => {
     const { slidesCount, activeSlide } = this.state;
-    console.log(slidesCount, activeSlide);
 
     let currentSlide = activeSlide;
     let slidesQuantity = slidesCount;
     slidesQuantity--;
     let nextSlide = currentSlide++ < slidesQuantity ? currentSlide++ : 0;
+
+    this.setState({
+      ...this.state,
+      activeSlide: nextSlide
+    });
+  };
+
+  renderNext = () => {
+    clearInterval(this.autoplayIterval);
+    this.nextSlide();
+  };
+
+  renderPrevious = () => {
+    clearInterval(this.autoplayIterval);
+    const { slidesCount, activeSlide } = this.state;
+
+    let currentSlide = activeSlide;
+    let slidesQuantity = slidesCount;
+    slidesQuantity--;
+    let nextSlide = currentSlide-- > 0 ? currentSlide-- : slidesQuantity;
+
     this.setState({
       ...this.state,
       activeSlide: nextSlide
@@ -28,9 +52,6 @@ export class TopSlider extends Component {
     //   30}px, ${event.clientY / 30}px)`;
   };
 
-  componentDidMount() {
-    setInterval(this.showSlides, 4000);
-  }
   render() {
     const { products } = this.props;
     const { activeSlide, slidesCount } = this.state;
@@ -89,7 +110,10 @@ export class TopSlider extends Component {
         })}
         <div className="slider__footer">
           <div className="top-slider__togglers">
-            <button className="top-slider__togglers-btn">
+            <button
+              className="top-slider__togglers-btn"
+              onClick={this.renderPrevious}
+            >
               <LeftArrowIcon />
             </button>
             <div
@@ -104,7 +128,10 @@ export class TopSlider extends Component {
                 activeSlide === 1 && "toggler-dot--active"
               )}
             />
-            <button className="top-slider__togglers-btn">
+            <button
+              className="top-slider__togglers-btn"
+              onClick={this.renderNext}
+            >
               <RightArrowIcon />
             </button>
           </div>
