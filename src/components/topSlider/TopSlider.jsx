@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { RightArrowIcon, LeftArrowIcon } from "../icons";
 import cx from "classnames";
+import styled from "styled-components";
+import { Background } from "./";
 import "./TopSlider.css";
 
 export class TopSlider extends Component {
@@ -8,9 +10,13 @@ export class TopSlider extends Component {
     super(props);
     this.state = {
       slidesCount: this.props.products.length,
-      activeSlide: 0
+      activeSlide: 0,
+      coordinates: {
+        axisX: 0,
+        axisY: 0
+      }
     };
-    this.autoplayIterval = setInterval(this.nextSlide, 4000);
+    this.autoPlay = setInterval(this.nextSlide, 4000);
   }
 
   nextSlide = () => {
@@ -28,12 +34,12 @@ export class TopSlider extends Component {
   };
 
   renderNext = () => {
-    clearInterval(this.autoplayIterval);
+    clearInterval(this.autoPlay);
     this.nextSlide();
   };
 
   renderPrevious = () => {
-    clearInterval(this.autoplayIterval);
+    clearInterval(this.autoPlay);
     const { slidesCount, activeSlide } = this.state;
 
     let currentSlide = activeSlide;
@@ -47,18 +53,27 @@ export class TopSlider extends Component {
     });
   };
 
-  parallax = event => {
-    // this.styles.transform = `translate(${event.clientX /
-    //   30}px, ${event.clientY / 30}px)`;
+  setMouseCoords = event => {
+    this.setState({
+      ...this.state,
+      coordinates: {
+        axisX: -event.clientX / 30,
+        axisY: -event.clientY / 30
+      }
+    });
   };
 
   render() {
     const { products } = this.props;
-    const { activeSlide, slidesCount } = this.state;
+    const {
+      activeSlide,
+      slidesCount,
+      coordinates: { axisX, axisY }
+    } = this.state;
     let currentSlide = activeSlide;
 
     return (
-      <div className="top-slider">
+      <div className="top-slider" onMouseMove={this.setMouseCoords}>
         {products.map((product, index) => {
           const {
             productTitle,
@@ -75,11 +90,11 @@ export class TopSlider extends Component {
                 this.state.activeSlide === index && "slide--active"
               )}
             >
-              <img
-                src={imageURL}
-                alt={productName}
-                className="slide__background"
-                onMouseMove={this.parallax}
+              <Background
+                imageURL={imageURL}
+                productName={productName}
+                axisX={axisX}
+                axisY={axisY}
               />
               <div className="slide__content">
                 <span className="slide__product-title">

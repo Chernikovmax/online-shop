@@ -1,1 +1,2 @@
-export * from './TopSlider';
+export * from "./TopSlider";
+export * from "./BackGround";
