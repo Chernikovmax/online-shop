@@ -1,6 +1,6 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 
-export class Background extends PureComponent {
+export class Background extends Component {
   render() {
     const { imageURL, productName } = this.props;
     return (
