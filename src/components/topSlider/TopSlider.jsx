@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { RightArrowIcon, LeftArrowIcon } from "../icons";
 import cx from "classnames";
-import styled from "styled-components";
 import { Background } from "./";
 import "./TopSlider.css";
 
