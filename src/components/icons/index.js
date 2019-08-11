@@ -5,3 +5,5 @@ export * from "./SearchIcon";
 export * from "./CrossIcon";
 export * from "./RightArrowIcon";
 export * from "./LeftArrowIcon";
+export * from "./EmptyHeartIcon";
+export * from "./FilledHeartIcon";

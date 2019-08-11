@@ -1,0 +1,40 @@
+.buy-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 7px;
+  border: none;
+  border-radius: 30px;
+  width: 36px;
+  height: 36px;
+  transition: width 0.2s linear;
+  margin-right: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  transition: width 0.2s linear;
+  cursor: pointer;
+}
+
+.buy-btn:hover {
+  width: 135px;
+}
+
+.buy-btn__hidden-text {
+  opacity: 0;
+  padding-left: 7px;
+  animation: showText 0.2s ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showText {
+  from {
+    padding-top: 10px;
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    padding-top: 0px;
+  }
+}
