@@ -1,55 +1,40 @@
 .buy-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 7px;
   border: none;
   border-radius: 30px;
   width: 36px;
   height: 36px;
-  cursor: pointer;
-  justify-content: flex-start;
-  padding: 0;
   transition: width 0.2s linear;
   margin-right: 5px;
-  background-color: transparent;
-  z-index: 3;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: #fff;
+  transition: width 0.2s linear;
+  cursor: pointer;
 }
 
 .buy-btn:hover {
-  width: 150px;
+  width: 135px;
 }
 
-.buy-btn:hover .buy-btn__wrapper {
-  width: 150px;
-}
-
-.buy-btn__wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 36px;
-  height: 36px;
-  background-color: #fff;
-  border-radius: 30px;
-  transition: width 0.2s linear;
-  z-index: 1;
-}
-
-/* .buy-btn:hover .hidden-text {
-  opacity: 1;
-} */
-
-.hidden-text {
-  /* opacity: 0; */
-  font-size: 12px;
-  font-weight: bold;
-  padding-left: 15px;
-  z-index: 1;
+.buy-btn__hidden-text {
+  opacity: 0;
+  padding-left: 7px;
+  animation: showText 0.2s ease;
+  animation-fill-mode: forwards;
 }
 
 @keyframes showText {
   from {
+    padding-top: 10px;
     opacity: 0;
   }
 
   to {
     opacity: 1;
+    padding-top: 0px;
   }
 }

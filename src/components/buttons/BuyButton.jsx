@@ -4,12 +4,16 @@ import { ShoppingBagIcon } from "../icons";
 import "./BuyButton.css";
 
 export class BuyButton extends Component {
-  state = {
-    isBuyBtnHovered: false
-  };
+  constructor(props) {
+    super(props);
+    this.renderButtonText = null;
+    this.state = {
+      isBuyBtnHovered: false
+    };
+  }
 
   showText = () => {
-    setTimeout(
+    this.renderButtonText = setTimeout(
       () =>
         this.setState({
           isBuyBtnHovered: true
@@ -19,6 +23,7 @@ export class BuyButton extends Component {
   };
 
   hideText = () => {
+    clearTimeout(this.renderButtonText);
     this.setState({
       isBuyBtnHovered: false
     });
@@ -26,16 +31,17 @@ export class BuyButton extends Component {
 
   render() {
     const { isBuyBtnHovered } = this.state;
+    const style = { width: "150px" };
     return (
       <button
         className="buy-btn"
-        onMouseOver={this.showText}
-        onMouseOut={this.hideText}
+        onMouseEnter={this.showText}
+        onMouseLeave={this.hideText}
       >
-        <div className="buy-btn__wrapper">
-          <ShoppingBagIcon />
-          {isBuyBtnHovered && <span className="hidden-text">ADD TO CARD</span>}
-        </div>
+        <ShoppingBagIcon />
+        {isBuyBtnHovered && (
+          <span className="buy-btn__hidden-text">ADD TO CARD</span>
+        )}
       </button>
     );
   }
