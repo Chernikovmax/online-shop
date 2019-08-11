@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { RightArrowIcon, LeftArrowIcon } from "../icons";
 import cx from "classnames";
 import { Background } from "./";
+import { LeftArrowButton, RightArrowButton } from "../buttons";
 import "./TopSlider.css";
 
 export class TopSlider extends Component {
@@ -124,12 +124,7 @@ export class TopSlider extends Component {
         })}
         <div className="slider__footer">
           <div className="top-slider__togglers">
-            <button
-              className="top-slider__togglers-btn"
-              onClick={this.renderPrevious}
-            >
-              <LeftArrowIcon />
-            </button>
+            <LeftArrowButton handleClick={this.renderPrevious} size={25} />
             <div
               className={cx(
                 "top-slider__togglers-dots",
@@ -142,12 +137,7 @@ export class TopSlider extends Component {
                 activeSlide === 1 && "toggler-dot--active"
               )}
             />
-            <button
-              className="top-slider__togglers-btn"
-              onClick={this.renderNext}
-            >
-              <RightArrowIcon />
-            </button>
+            <RightArrowButton handleClick={this.renderNext} size={25} />
           </div>
           <div className="slider__counter">{`${++currentSlide} / ${slidesCount}`}</div>
         </div>

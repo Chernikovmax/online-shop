@@ -188,18 +188,6 @@
   width: 100px;
 }
 
-.top-slider__togglers-btn {
-  border: 1px solid #ffffffa3;
-  border-radius: 50%;
-  background-color: transparent;
-  height: 25px;
-  width: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-
 .top-slider__togglers-dots {
   width: 7px;
   height: 7px;
