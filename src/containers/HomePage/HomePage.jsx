@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import { TopSlider } from "../../components/topSlider";
 import woman1 from "../../content/images/woman1.jpg";
 import woman2 from "../../content/images/woman2.jpg";
+import { ProductsSlider } from "../../components/ProductsSlider";
+
+import "./HomePage.css";
 
 const topProducts = [
   {
@@ -25,14 +28,10 @@ export class HomePage extends Component {
     return (
       <div>
         <TopSlider products={topProducts} />
-        <div
-          style={{
-            width: "100vw",
-            maxWidth: "100%",
-            height: "200px",
-            backgroundColor: "#000"
-          }}
-        />
+        <div className="latest-products">
+          <h1>LATEST PRODUCTS</h1>
+          <ProductsSlider />
+        </div>
       </div>
     );
   }
