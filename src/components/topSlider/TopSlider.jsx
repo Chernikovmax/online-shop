@@ -124,7 +124,7 @@ export class TopSlider extends Component {
         })}
         <div className="slider__footer">
           <div className="top-slider__togglers">
-            <LeftArrowButton handleClick={this.renderPrevious} size={25} />
+            <LeftArrowButton onClick={this.renderPrevious} size={25} />
             <div
               className={cx(
                 "top-slider__togglers-dots",
@@ -137,7 +137,7 @@ export class TopSlider extends Component {
                 activeSlide === 1 && "toggler-dot--active"
               )}
             />
-            <RightArrowButton handleClick={this.renderNext} size={25} />
+            <RightArrowButton onClick={this.renderNext} size={25} />
           </div>
           <div className="slider__counter">{`${++currentSlide} / ${slidesCount}`}</div>
         </div>

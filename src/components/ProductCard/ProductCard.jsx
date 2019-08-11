@@ -23,7 +23,7 @@ export class ProductCard extends Component {
         )}
         <img className="product-card__image" src={imageUrl} alt="product" />
         <div className="product-card__buttons">
-          <BuyButton />
+          <BuyButton id={id} />
           <LikeButton />
         </div>
         <div className="product-card__info">

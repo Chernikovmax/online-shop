@@ -21,7 +21,7 @@ export const LeftArrowIcon = props => {
         style={{
           width: `${iconSize}`,
           height: `${iconSize}`,
-          fill: "#ffffffa3"
+          fill: "#a4a4a4"
         }}
       >
         <path d="M135.412 0L35.709 99.702 135.412 199.404 163.695 171.119 92.277 99.702 163.695 28.285z" />

@@ -31,12 +31,13 @@ export class BuyButton extends Component {
 
   render() {
     const { isBuyBtnHovered } = this.state;
-    const style = { width: "150px" };
+    const { id } = this.props;
     return (
       <button
         className="buy-btn"
         onMouseEnter={this.showText}
         onMouseLeave={this.hideText}
+        id={id}
       >
         <ShoppingBagIcon />
         {isBuyBtnHovered && (

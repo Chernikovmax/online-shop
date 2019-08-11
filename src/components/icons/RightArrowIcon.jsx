@@ -21,7 +21,7 @@ export const RightArrowIcon = props => {
         style={{
           width: `${iconSize}`,
           height: `${iconSize}`,
-          fill: "#ffffffa3"
+          fill: "#a4a4a4"
         }}
       >
         <path d="M72.166 200.24l97.26-102.087L67.34.893 39.748 29.855l73.135 69.668-69.678 73.125z" />

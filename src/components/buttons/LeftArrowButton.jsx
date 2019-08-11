@@ -2,10 +2,10 @@ import React from "react";
 import { LeftArrowIcon } from "../icons";
 
 export const LeftArrowButton = props => {
-  const { handleClick, size } = props;
+  const { onClick, size } = props;
   const iconSize = size - 3;
   const styles = {
-    border: "1px solid #ffffffa3",
+    border: "1px solid #a4a4a4",
     borderRadius: "50%",
     backgroundColor: "transparent",
     display: "flex",
@@ -16,7 +16,7 @@ export const LeftArrowButton = props => {
     width: `${size}px`
   };
   return (
-    <button style={styles} onClick={handleClick}>
+    <button style={styles} id="left-btn" onClick={onClick}>
       <LeftArrowIcon size={iconSize} />
     </button>
   );
