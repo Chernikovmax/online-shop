@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import { TopSlider } from "../../components/topSlider";
+import { TopSlider } from "../../components/TopSlider";
 import woman1 from "../../content/images/woman1.jpg";
 import woman2 from "../../content/images/woman2.jpg";
 import { ProductsSlider } from "../../components/ProductsSlider";
-
+import { TopSellingProducts } from "../../components/TopSellingProducts";
+import { AdwBanner } from "../../components/AdwBanner";
 import "./HomePage.css";
 
 const topProducts = [
@@ -31,6 +32,10 @@ export class HomePage extends Component {
         <div className="latest-products">
           <h1>LATEST PRODUCTS</h1>
           <ProductsSlider />
+        </div>
+        <TopSellingProducts />
+        <div className="centering-wrapper">
+          <AdwBanner />
         </div>
       </div>
     );

@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import cx from "classnames";
 import { Background } from "./";
-import { LeftArrowButton, RightArrowButton } from "../buttons";
+import {
+  BigRoundedButton,
+  LeftArrowButton,
+  RightArrowButton
+} from "../buttons";
 import "./TopSlider.css";
 
 export class TopSlider extends Component {
@@ -103,10 +107,22 @@ export class TopSlider extends Component {
                   {productDescription}
                 </p>
                 <div className="slide__buttons">
-                  <button className="slide__btn">DISCOVER</button>
-                  <button className="slide__btn slide__btn-buy">
-                    ADD TO CARD
-                  </button>
+                  <BigRoundedButton
+                    title={"DISCOVER"}
+                    styleMods={{
+                      fillColor: "transparent",
+                      borderColor: "#fff",
+                      textColor: "#fff"
+                    }}
+                  />
+                  <BigRoundedButton
+                    title={"ADD TO CARD"}
+                    styleMods={{
+                      fillColor: "#fff",
+                      borderColor: "#fff",
+                      textColor: "#111"
+                    }}
+                  />
                 </div>
               </div>
               <div className="slide__price-block">

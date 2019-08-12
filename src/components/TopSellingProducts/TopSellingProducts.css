@@ -1,0 +1,32 @@
+.top-selling-products {
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.top-selling-products__title {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.top-selling-products__categories {
+  display: flex;
+  justify-content: space-between;
+  min-width: 1280px;
+  max-width: 95%;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-width: 1280px;
+  max-width: 95%;
+  perspective: 10000px;
+  transform-style: preserve-3d;
+}
