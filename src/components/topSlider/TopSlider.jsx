@@ -27,7 +27,6 @@ export class TopSlider extends Component {
     let nextSlide = currentSlide++ < slidesQuantity ? currentSlide++ : 0;
 
     this.setState({
-      ...this.state,
       activeSlide: nextSlide
     });
   };
@@ -47,14 +46,12 @@ export class TopSlider extends Component {
     let nextSlide = currentSlide-- > 0 ? currentSlide-- : slidesQuantity;
 
     this.setState({
-      ...this.state,
       activeSlide: nextSlide
     });
   };
 
   setMouseCoords = event => {
     this.setState({
-      ...this.state,
       coordinates: {
         axisX: -event.clientX / 30,
         axisY: -event.clientY / 30

@@ -17,20 +17,22 @@ export class ProductsSlider extends Component {
 
   nextIndices = () => {
     clearInterval(this.renderNextInterval);
+    this.nextSlide();
+  };
+
+  nextSlide = () => {
     const { indicesOfRendered, products } = this.state;
     const lastPossibleSlide = products.length - 1;
 
     let indices = indicesOfRendered.map(number =>
-      number++ < lastPossibleSlide ? number++ : (number = 0)
+      number + 1 < lastPossibleSlide ? number + 1 : 0
     );
 
-    console.log(indices);
-
-    return this.setState({
-      ...this.state,
+    this.setState({
       indicesOfRendered: indices
     });
   };
+
   previousIndices = () => {
     clearInterval(this.renderNextInterval);
     const { indicesOfRendered, products } = this.state;
@@ -40,10 +42,7 @@ export class ProductsSlider extends Component {
       number-- > 0 ? number-- : (number = lastPossibleSlide)
     );
 
-    console.log(indices);
-
-    return this.setState({
-      ...this.state,
+    this.setState({
       indicesOfRendered: indices
     });
   };
@@ -56,7 +55,6 @@ export class ProductsSlider extends Component {
 
   componentWillMount() {
     this.setState({
-      ...this.state,
       products: this.state.products.map((product, index) => {
         const {
           id,
@@ -79,11 +77,10 @@ export class ProductsSlider extends Component {
         );
       })
     });
-    this.renderNextInterval = setInterval(this.nextIndices, 5000);
+    this.renderNextInterval = setInterval(this.nextSlide, 5000);
   }
 
   render() {
-    const { products } = this.state;
     const TOGGLE_BUTTON_SIZE = 43;
 
     return (

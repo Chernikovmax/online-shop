@@ -6,6 +6,7 @@
   position: relative;
   width: 264px;
   height: 495px;
+  transition: transform 0.1s;
 }
 
 .product-card__image {
