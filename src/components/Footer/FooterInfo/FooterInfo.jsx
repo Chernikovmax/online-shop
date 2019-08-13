@@ -46,8 +46,8 @@ export function FooterInfo() {
             <div className="row-align">
               <span className="contacts__title">T.</span>
               <span>
-                <a className="contacts__link" href="tel:+53 345 7953 32453">
-                  +53 345 7953 32453
+                <a className="contacts__link" href="tel:+79967965266">
+                  +7-996-796-52-66
                 </a>
               </span>
             </div>
@@ -56,9 +56,9 @@ export function FooterInfo() {
               <span>
                 <a
                   className="contacts__link"
-                  href="mailto:office@youremail.com"
+                  href="mailto:chernik.max@gmail.com"
                 >
-                  office@youremail.com
+                  chernik.max@gmail.com
                 </a>
               </span>
             </div>

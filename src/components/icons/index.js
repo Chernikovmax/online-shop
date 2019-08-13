@@ -10,3 +10,7 @@ export * from "./EmptyHeartIcon";
 export * from "./FilledHeartIcon";
 export * from "./PaymentMethods";
 export * from "./socials/LinkedInIcon";
+export * from "./socials/GitHubIcon";
+export * from "./socials/FacebookIcon";
+export * from "./socials/VKIcon";
+export * from "./socials/TelegramIcon";

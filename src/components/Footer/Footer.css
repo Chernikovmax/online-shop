@@ -1,4 +1,7 @@
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 70px;
   width: 100vw;
   max-width: 100%;
@@ -6,8 +9,13 @@
 }
 
 .dividing-line {
-  height: 1px;
+  border-bottom: 2px solid #423d38;
   width: 100vw;
   max-width: 100%;
-  background-color: green;
+  margin-bottom: 60px;
+}
+
+.copyright {
+  color: #fff !important;
+  margin-bottom: 60px;
 }
