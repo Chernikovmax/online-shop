@@ -1,27 +1,28 @@
 .error-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    max-width: 100%;
-    height: calc(100vh - 50px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  max-width: 100%;
+  height: calc(100vh - 50px);
 }
 
 .error-page__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 400px;
-    height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  min-height: 70vh;
+  max-height: 1000px;
 }
 
 .error-page__error-number {
-    color: #fff;
-    font-size: 80px;
+  color: #000;
+  font-size: 80px;
 }
 
 .error-page__title {
-    color: #fff;
-    font-size: 30px;
-    font-weight: bold;
+  color: #000;
+  font-size: 30px;
+  font-weight: bold;
 }

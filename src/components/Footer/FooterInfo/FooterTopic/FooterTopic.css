@@ -1,0 +1,26 @@
+.topic {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.topic__content {
+  display: flex;
+  flex-direction: column;
+}
+.topic__content-image {
+  margin-right: 15px;
+}
+
+.topic__content-title {
+  color: #96969638;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.topic__content-link {
+  margin-top: 6px;
+  text-decoration: none;
+  color: #f51167;
+}

@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  width: 100vw;
+  max-width: 100%;
+  background-color: #282828;
+}
+
+.dividing-line {
+  border-bottom: 2px solid #423d38;
+  width: 100vw;
+  max-width: 100%;
+  margin-bottom: 60px;
+}
+
+.copyright {
+  color: #fff !important;
+  margin-bottom: 60px;
+}
