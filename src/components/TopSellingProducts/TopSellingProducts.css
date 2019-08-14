@@ -16,17 +16,40 @@
 .top-selling-products__categories {
   display: flex;
   justify-content: space-between;
-  min-width: 1280px;
-  max-width: 95%;
+  width: 1200px;
 }
 
 .products {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-wrap: wrap;
-  min-width: 1280px;
-  max-width: 95%;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
   perspective: 10000px;
   transform-style: preserve-3d;
+}
+
+.products .product-card:nth-child(4n) {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1113px) {
+  .products .product-card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .products .product-card:nth-child(4n) {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .products {
+    max-width: 1280px;
+  }
+  /* .products .product-card:nth-child(3n) {
+    margin-right: 0;
+  }
+  .products .product-card:nth-child(4n) {
+    margin-right: 20px;
+  } */
 }

@@ -2,9 +2,20 @@
   display: flex;
   flex-direction: column;
   width: 100vw;
+  height: calc(100vw / 2.67);
   max-width: 100%;
-  height: calc(100vw / 2.6);
   position: relative;
+}
+
+@media screen and (min-width: 1920px) {
+  .top-slider {
+    box-sizing: content-box;
+    --width: 1920px;
+    width: var(--width);
+    height: calc(var(--width) / 2.67);
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .slide {
@@ -174,11 +185,10 @@
 
 .slider__footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   position: absolute;
   bottom: 2%;
-  left: 9%;
-  width: 1000px;
+  width: 100%;
 }
 
 .top-slider__togglers {

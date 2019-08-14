@@ -15,3 +15,13 @@
   perspective: 10000px;
   transform-style: preserve-3d;
 }
+
+.product-slides .product-card:nth-child(4) {
+  margin-right: 0;
+}
+
+@media screen and (min-width: 1320px) {
+  .products-slider {
+    width: 1320px;
+  }
+}

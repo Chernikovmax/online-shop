@@ -9,7 +9,7 @@ export class ProductsSlider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: products.slice(0, 6),
+      products: products.slice(4, 10),
       indicesOfRendered: [0, 1, 2, 3]
     };
     this.renderNextInterval = null;

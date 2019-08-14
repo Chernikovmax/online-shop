@@ -6,6 +6,7 @@
   position: relative;
   width: 264px;
   height: 495px;
+  margin-right: 20px;
   opacity: 0;
   transition: transform 0.1s;
   animation: renderCard 0.5s linear;
