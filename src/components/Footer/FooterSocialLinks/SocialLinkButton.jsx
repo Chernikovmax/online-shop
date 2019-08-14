@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import { Link } from "react-router-dom";
 import {
   LinkedInIcon,
   GitHubIcon,
@@ -43,15 +42,16 @@ export class SocialLinkButton extends Component {
     const { isHovered } = this.state;
     const { title, link } = this.props;
     return (
-      <Link
+      <a
+        href={link}
         className="footer__social-link"
-        to={link}
         onMouseEnter={this.toggleColor}
         onMouseLeave={this.toggleColor}
       >
+        {" "}
         {this.renderIcon(title, isHovered)}
         <span className="footer__social-link-title">{title}</span>
-      </Link>
+      </a>
     );
   }
 }

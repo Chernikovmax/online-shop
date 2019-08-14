@@ -18,9 +18,7 @@ export class FooterSocialLinks extends Component {
           title={"LinkedIn"}
         />
         <SocialLinkButton
-          link={
-            "https://github.com/Chernikovmaxtps://www.linkedin.com/in/chernikovmax/"
-          }
+          link={"https://github.com/Chernikovmax"}
           title={"GitHub"}
         />
         <SocialLinkButton
