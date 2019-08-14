@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/ghp-online-shop/static/css/main.5216b7db.chunk.css",
+    "main.js": "/ghp-online-shop/static/js/main.3c2fa4eb.chunk.js",
+    "main.js.map": "/ghp-online-shop/static/js/main.3c2fa4eb.chunk.js.map",
+    "runtime~main.js": "/ghp-online-shop/static/js/runtime~main.3de78542.js",
+    "runtime~main.js.map": "/ghp-online-shop/static/js/runtime~main.3de78542.js.map",
+    "static/js/2.2deb7689.chunk.js": "/ghp-online-shop/static/js/2.2deb7689.chunk.js",
+    "static/js/2.2deb7689.chunk.js.map": "/ghp-online-shop/static/js/2.2deb7689.chunk.js.map",
+    "index.html": "/ghp-online-shop/index.html",
+    "precache-manifest.9044746289c80024a680ca8cfd63c8d3.js": "/ghp-online-shop/precache-manifest.9044746289c80024a680ca8cfd63c8d3.js",
+    "service-worker.js": "/ghp-online-shop/service-worker.js",
+    "static/css/main.5216b7db.chunk.css.map": "/ghp-online-shop/static/css/main.5216b7db.chunk.css.map",
+    "static/media/1.jpg": "/ghp-online-shop/static/media/1.ffdd8f73.jpg",
+    "static/media/10.jpg": "/ghp-online-shop/static/media/10.2e8261f4.jpg",
+    "static/media/11.jpg": "/ghp-online-shop/static/media/11.63e4b921.jpg",
+    "static/media/12.jpg": "/ghp-online-shop/static/media/12.17f95c5a.jpg",
+    "static/media/2.jpg": "/ghp-online-shop/static/media/2.cb1db45e.jpg",
+    "static/media/3.jpg": "/ghp-online-shop/static/media/3.b51ce0bc.jpg",
+    "static/media/4.jpg": "/ghp-online-shop/static/media/4.af9fb444.jpg",
+    "static/media/5.jpg": "/ghp-online-shop/static/media/5.d60c21cb.jpg",
+    "static/media/6.jpg": "/ghp-online-shop/static/media/6.36a6f3e0.jpg",
+    "static/media/7.jpg": "/ghp-online-shop/static/media/7.e48f463a.jpg",
+    "static/media/8.jpg": "/ghp-online-shop/static/media/8.40011397.jpg",
+    "static/media/9.jpg": "/ghp-online-shop/static/media/9.bc5fba49.jpg",
+    "static/media/banner.jpg": "/ghp-online-shop/static/media/banner.e92c285f.jpg",
+    "static/media/mini-pic2.png": "/ghp-online-shop/static/media/mini-pic2.3da1a051.png",
+    "static/media/woman1.jpg": "/ghp-online-shop/static/media/woman1.c56a6acc.jpg",
+    "static/media/woman2.jpg": "/ghp-online-shop/static/media/woman2.135cf584.jpg"
+  }
+}
