@@ -41,11 +41,11 @@ export class SocialLinkButton extends Component {
 
   render() {
     const { isHovered } = this.state;
-    const { title } = this.props;
+    const { title, link } = this.props;
     return (
       <Link
         className="footer__social-link"
-        to={"https://www.linkedin.com/in/chernikovmax/"}
+        to={link}
         onMouseEnter={this.toggleColor}
         onMouseLeave={this.toggleColor}
       >
